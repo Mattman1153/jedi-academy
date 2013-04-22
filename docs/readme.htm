@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Jedi Academy Empire 1.02 - by cHoSeN oNe</title>
+<meta name="Keywords" content="jar, admin mod, jae, jedi, knight, academy, empire, revolutions, reloaded, nohai, chosen one" />
+<meta name="Description" content="A Serverside extension for Jedi Knight: Jedi Academy" />
+<style type="text/css">
+
+body{
+background: #ffffff;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+dd{
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+.section{
+font-family: arial, helvetica, sans-serif;
+font-weight: bold;
+color: #000099;
+font-size: 14px;
+}
+.maintable{
+border: 1px solid black;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+background: #ffffff;
+}
+
+.pagetop{
+background: #000000;
+color: #cccccc;
+border-bottom: 1px solid black;
+font-size: 28px;
+font-family: Shadow of Xizor, arial, helvetica, sans-serif;
+}
+
+.header{
+background: #000000;
+color: #cccccc;
+border: 1px solid black;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+.borderbottom{
+border-bottom: 1px solid black;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+.overviewtable{
+background-color: #cccccc;
+border: 1px solid black;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+.overviewleft{
+background: #6699ff;
+border: 1px solid black;
+padding: 5px;
+color: #000000;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+font-weight: bold;
+}
+
+.overviewleftlight{
+background: #6699ff;
+border: 1px solid black;
+padding: 5px;
+color: #ffffff;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+font-weight: bold;
+}
+
+
+.overviewleftdark{
+background: #000099;
+border: 1px solid black;
+padding: 5px;
+color: #ffffff;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+font-weight: bold;
+}
+
+.overviewright{
+background: #6699ff;
+border: 1px solid black;
+padding: 5px;
+color: #ffffff;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+.overviewrightdark{
+background: #000099;
+border: 1px solid black;
+padding: 5px;
+color: #ffffff;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+font-weight: bold;
+}
+
+a{
+text-decoration: None;
+color: #000000;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+a:hover{
+text-decoration: None;
+color: #6699ff;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+span.fontstyleblack{
+color: #000000;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px
+}
+span.fontstyleblue{
+color: #000099;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px
+}
+span.fontstylegray{
+color: #cccccc;
+font-family: arial, helvetica, sans-serif;
+font-size: 12px
+}
+
+</style>
+</head>
+<body>
+<table class='maintable' width="100%" cellspacing="0" cellpadding="10">
+<tr>
+	<td class='pagetop' align="center" valign="middle">Jedi Academy Empire</td>
+</tr>
+<tr>
+	  <td class='borderbottom' align="center" valign="middle">
+          <table cellspacing="2" class='overviewtable'>
+			<tr>
+			  <td class='overviewleftdark'>Version</td>
+			  <td class='overviewrightdark' align="center" valign="middle">1.02</td>
+			</tr>
+			<tr>
+			  <td class='overviewleftlight'>Author</td>
+              <td class='overviewleftlight'>Michael <span class="fontstyleblack">'cHoSeN oNe'</span> Nohai</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>Email</td>
+				<td class='overviewrightdark'><a href='mailto:chosenone@thejediacademy.net'>chosenone@thejediacademy.net</a></td>
+			</tr>
+			<tr>
+			  <td class='overviewleftlight'>Type</td>
+              <td class='overviewleftlight'>Jedi Knight: Jedi Academy<br />
+			  Server Extension</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	  	<td><p class="section">Index</p>
+		<a href='#overview'>Overview</a><br />
+		<a href='#update2'>1.02</a><br />
+		<a href='#update1'>1.01</a><br />
+		<a href='#base'>1.0</a><br />
+        <a href='#installation'>Installation</a><br />
+        <a href='#modifications'>Modifications</a><br />
+		<a href='#admincommands'>Rcon, Admin, and Knight Commands</a><br />
+		<a href='#clientcommands'>Client Commands</a><br />
+		<a href='#emotecommands'>Emote Commands</a><br />
+		<a href='#damagecvars'>Saber Damage CVars</a><br />
+		<a href='#amplifycvars'>Saber Damage Amplifier CVars</a><br />
+		<a href='#messagecvars'>Message CVars</a><br />
+		<a href='#othercvars'>Other CVars</a><br />
+		<a href='#knownissues'>Known Issues</a><br />
+		<a href='#acknowledgments'>Acknowledgments</a><br />
+		<a href='#disclaimer'>Disclaimer</a><br />
+		<br />
+		<br />
+		<br />
+		<p class="section" id='overview'>Overview</p>
+		<p>This mod was created initially for the <a href='http://www.thejediacademy.net'>Jedi Academy</a>.
+		The JAE Mod is a server-side only modification designed administrate a server with ease.  It is loaded with Admin Commands, Client Commands, 
+		Server Options and cVars; Extremely modified to meet any clans and admins expectations. This is truly the only mod you will 
+		ever need to get that doesn't alter the normal game play of Jedi Knight: Jedi Academy&reg;. Please visit us at <a href='http://jamod.jk3files.com'>http://jamod.jk3files.com</a>, 
+		or on IRC at #jae @ irc.quakenet.org.</p>
+		<br />
+		<br />
+		<p class="section" id='update2'>1.02</p>
+		<dl>
+		<dd><b>---Updates---</b></dd>
+		</dl>
+		<ul>
+		<li>New CVar g_mAdminLoginControl allows specific settings for restricting the clients that are authorized to enter your server without the hassle of altering passwords all the time.  Great for clan servers.</li>
+		<li>New Saber Damage Amplifier CVars - to fully adjust your saber combat to the extent it needs should you prefer a different feel to your server.</li>
+        <li>@ allows you to do admin chat directly from any chat mode.</li>
+        <li>Time can now be tracked during private duels.</li>
+		</ul>
+		<p class="section" id='update1'>1.01</p>
+		<dl>
+		<dd><b>---Features---</b></dd>
+		</dl>
+		<ul>
+		<li>Refactored some code having to do with the saber damage cvars.</li>
+		<li>Linux Makefile has been revamped to mirror the one originally created by Raven Software.  Raven Makefile is also included with the source code.</li>
+		<li>Project has been upgraded to compile in Visual Studio 2005.  VS 2002 and 2003 projects still exist.</li>
+		<li>Over 10 new bugfixes applied from authors in <a href='http://www.lucasforums.com'>LucasForums</a>.  Author credit is commented in the code.</li>
+		<li>New emsit4, emsit5, and emsit6 emotes so you can sit proper in those chairs.  That is a total of 20 emotes in all.</li>
+		<li>New g_mPSayMode CVar to control the location of the private chat messages.</li>
+		<li>New warning system based on the idea introduced by MultiPlayer Xtra mod.</li>
+		<li>Re-added g_mSaberDMGIdle and g_mSaberDMGThrow CVars to better control the saber system should it deviate from basejk.</li>
+		<li>New CVars g_mDuelTimer and g_mDuelTimerWait to control the waiting period a client needs to wait between another private duel.</li>
+		<li>New Cvar g_mBanFile to signify the name of the file you want to save the banned IP addresses in.</li>
+		</ul>
+		<p class="section" id='base'>1.0</p>
+		<dl>
+		<dd><b>---Features---</b></dd>
+		</dl>
+		<ul>
+		<li>Source Code available via Subversion</li>
+		<li>Built off of the Jedi Academy Mod for Jedi Knight: Jedi Outcast.</li>
+		<li>New documentation rewritten and verified in XHTML 1.0</li>
+		<li>Rank name automatically appended to names for chatting.</li>
+		<li>Admin levels use shared command names.</li>
+		<li>All new emotes</li>
+		<li>Custom chat colors</li>
+		<li>Fixed buffer overflow in amsay.</li>
+		<li>Completely refactored code base to increase speed and overall optimizations.</li>
+		<li>New commands !about, !license to view the terms of the software.</li>
+		<li>Fixed security issue with viewing the rconPassword using the mvstr command.</li>
+		<li>Windows binaries and Linux shared objects are packaged together.</li>
+		</ul>
+		<br />
+		<p class="section" id='installation'>Installation</p>
+		<p>
+          <span class="fontstyleblue">Windows:</span><br />
+          Create a directory like this:<br />
+          X:\...\Star Wars Jedi Knight Jedi Academy\GameData\jae<br />
+          where 'X:\...\Star Wars Jedi Knight Jedi Academy\' is the path where you installed 
+          Jedi Academy. Now you can start the server with the '+set fs_game 
+          jae' argument followed by your server scripts.<br />
+          <br />
+          Example:<br />
+          <b>jampDed.exe +set dedicated 2 +set fs_game jae +set net_port 29071 +exec jae_server.cfg</b>
+		  <br />
+		  <br />
+        <b>Important:</b><br />
+		  For the Banning system, you will need to have Administrator privileges for the operating system to the jae folder.<br />
+		</p>
+		<p>
+		<span class="fontstyleblue">Linux/Unix:</span><br />
+		Create a directory like this:<br />
+		<b>/usr/local/games/ja/jae</b> where '<b>/usr/local/games/ja/</b>' is the path where you installed Jedi Knight: Jedi Academy.<br />
+		Place the jampgamei386.so into the jae folder and grant full admin 
+        rights to the jae folder.<br /><br />
+		Now you can start the server with the '+set fs_game jae' argument followed by your server scripts.<br /><br />
+		Example:<br />
+		<b>./linuxjampded +set dedicated 2 +set fs_game jae +set net_port 29071 +exec jae_server.cfg</b>
+		<br />
+		<br />
+		</p>
+		<dl>
+		<dd>Perl Server Log Backup Script:</dd>
+		</dl>
+		<ol>
+		<li>Place the script in location of your server's jka root directory.</li>
+		<li>View the cron script by using the crontab -1 command to see the script.</li>
+		<li>Next edit the script using the crontab -e command and map the path to the perl script.</li>
+		<li>If you wish to Back-up at 5 am every week, every month, type the following.</li>
+		<li>0 5 * * 0 /path/jkaroot/jkalogbackup.pl</li>
+		<li>If you wish to have an email sent to you in case the script fails, type MAILTO=&quot;youremail@somewhere.com&quot;</li>
+		</ol>
+		<p class="section" id='modifications'>Modifications</p>
+		<ul>
+          <li>Various Admin and Knight commands</li>
+          <li>Logging of player IP when player connects to the server. Logging happens in the following format:<br />
+          mlog_ClientConnect: &lt;player client id&gt; '&lt;player name&gt;' -&gt; '&lt;player ip&gt;'</li>
+          <li>Logging of Admin and Knight commands. Every command will be logged in the following format:<br />
+          mlog_command &lt;playername&gt;</li>
+          <li>Removed the 2 player at a time duel limit.</li>
+          <li>Sabers don't automatically ignite at the start of a duel.</li>
+          <li>When player wins a duel, they receive their pre-duel health and shields back.</li>
+          <li>Typing <strong>!motd</strong> or <strong>!rules</strong> when in any chat mode shows the motd to the player who said it.</li>
+		  <li>Typing <strong>!version</strong> or <strong>!author</strong> when in any chat mode shows the version number and author.</li>
+		  <li>Typing <strong>!home</strong> or <strong>!web</strong> when in any chat mode shows the JA home page link.</li>
+		  <li>Typing <strong>!license</strong> or <strong>!about</strong> when in any chat mode shows the license and JAE mod information.</li>
+		  <li>Rcon command &quot;cvar_restart&quot; now resets all JAE mod cvars back to the defaults, except admin passwords.</li>
+		  <li>Clients can now automatically log into the server with admin access if admin password is supplied instead of the server password.</li>
+		  <li>Clients can have Admin Only servers if g_password matches any of the passwords defined for g_mAdminPassword or g_mKnightPassword.</li>
+		  <li>Applied MAX_VEHICLES fix to be 64 instead of 16.</li>
+		  <li>Unable to lame bots in a private duel when bot_honorableduelacceptance is enabled.</li>
+		  <li>Private duels can continue if the server timelimit has been met.  No new duels can be initiated.  Thanks to lmo.</li>
+          <li><strong>amsay</strong> or <strong>?amsay</strong> when in any chat mode will go directly into admin chat.  Now your chat will go to the right people in case of a typo</li>
+        </ul>
+		<br />
+		<br />
+		<p class="section" id='admincommands'>RCon, Admin, and Knight commands</p>
+		<p><span class="fontstyleblue">playerid</span> - Can be a client id, full 
+		player name or partial player name. For example if there's a player 
+		named 'Padawan' and you want to kick him you can use this: mkick 
+		pad; mkick pada; mkick wan; etc. (Just watch out if there are 
+		more players with the same sequence in their name. At this point 
+		only the first encountered player is taken for the command. Also 
+		note that the keyword 'all' has special meaning. Most commands 
+		take the 'all' keyword to execute the command on all players on the server.
+		</p>
+		<table cellpadding="10">
+		<tr>
+			<th class='header'>RCon command</th>
+			<th class='header'>Admin Command</th>
+			<th class='header'>Admin Gun Command</th>
+			<th class='header'>CVar Bitwise Value</th>
+			<th class='header'>Description</th>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>madminaccess<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;level&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="top" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>Gives the client admin access level <br />
+			Type the value for g_mRankName or &quot;admin&quot; for level 1; Type the value of g_mRankName2 or &quot;knight&quot; for level 2.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mdenyadminaccess<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;level&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="top" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>Denies the client admin access <br /> 
+		  Type the value for g_mRankName or &quot;admin&quot; for level 1; Type the value of g_mRankName2 or &quot;knight&quot; for level 2.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>minfo</td>
+			<td valign="top" class='overviewleftdark'>aminfo</td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="top" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>Show all the available commands you have access to as well as the version of the binary.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mhelp</td>
+			<td valign="top" class='overviewleftdark'>amhelp</td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="top" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>Quick Help for commands available in mod.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>msleep<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amsleep<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">sleepgun</td>
+			<td valign="middle" class='overviewleft' align="center">1</td>
+			<td valign="top" class='overviewright'>Places client in a sleeping position.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mwake<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amwake<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">wakegun</td>
+			<td valign="top" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>Wake the player if he's asleep (undo the effects of msleep)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>msilence<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;mode&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amsilence<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;mode&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">2</td>
+			<td valign="top" class='overviewright'>Silence players so they can't talk. Mode passed could be 'global' for all chat disabled and 
+			'private' for just public chat disabled.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>munsilence<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;mode&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amunsilence<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;mode&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="top" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>Unsilence players so they can talk again. Mode passed could be 'global' or 'gm' for all chat enabled and 
+			'private' or 'pm' for just public chat enabled.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mlockteam<br /> 
+		    <span class="fontstylegray">&lt;team&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amlockteam<br /> 
+		    <span class="fontstylegray">&lt;team&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">4</td>
+			<td valign="top" class='overviewright'>Locks a specific team in CTF mode so no one can join. (Red, Blue, Spectator)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>munlockteam<br /> 
+		    <span class="fontstylegray">&lt;team&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amunlockteam<br /> 
+		    <span class="fontstylegray">&lt;team&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="top" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>Unlocks a specific team in CTF 
+              mode so people are allowed to join. (Red, Blue, Spectator)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mrandteams</td>
+			<td valign="top" class='overviewleftdark'>amrandteams</td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">8</td>
+			<td valign="top" class='overviewright'>Randomizes Teams in CTF Gameplay.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mallowvote<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amallowvote<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">allowvotegun</td>
+			<td valign="middle" class='overviewleft' align="center">16</td>
+			<td valign="top" class='overviewright'>Allows client to use the voting feature again.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mdenyvote<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amdenyvote<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">denyvotegun</td>
+			<td valign="top" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>Disables use of voting to a specific client.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mshowmotd<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amshowmotd<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">showmotdgun</td>
+			<td valign="middle" class='overviewleft' align="center">32</td>
+			<td valign="top" class='overviewright'>By default the motd is shown whenever a player enters the game. 
+			This can be used to remind someone of the motd/rules by showing it to them again.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mrename<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;new name&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amrename<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;new name&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">64</td>
+			<td valign="top" class='overviewright'>Remotely renames a player.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mpsay<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>ampsay<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">128</td>
+			<td valign="top" class='overviewright'>Send a message to a specific player. 'All' parameter send the message to everyone.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mtele<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;x&gt;<br />&lt;y&gt;<br />&lt;z&gt;<br />&lt;yaw&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amtele<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;x&gt;<br />&lt;y&gt;<br />&lt;z&gt;<br />&lt;yaw&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">256</td>
+			<td valign="top" class='overviewright'>This can teleport any client to any desired location on a map.<br /></td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mnotarget<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amnotarget<br />
+			<span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">notargetgun</td>
+			<td valign="middle" class='overviewleft' align="center">512</td>
+			<td valign="top" class='overviewright'>Toggles client to be a target for NPC's.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>morigin<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amorigin<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">origingun</td>
+			<td valign="middle" class='overviewleft' align="center">1024</td>
+			<td valign="top" class='overviewright'>This gets client's X, Y, and Z coordinates on the map and prints them to the console.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mkick<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;reason&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amkick<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;reason&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">kickgun</td>
+			<td valign="middle" class='overviewleft' align="center">2048</td>
+			<td valign="top" class='overviewright'>Same as kick but enhanced to also take a clientid or a partial player name, and a reason from the admin for being kicked.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mkickban<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;reason&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amkickban<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;reason&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">kickbangun</td>
+			<td valign="middle" class='overviewleft' align="center">4096</td>
+			<td valign="top" class='overviewright'>Bans and kicks the player at the same time with a reason why they were kicked. No need to enter an ip.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mbanrange<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;security&gt;<br />&lt;reason&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>ambanrange<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;security&gt;<br />&lt;reason&gt;</span></td>
+			<td valign="middle" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">8192</td>
+			<td valign="top" class='overviewright'>Kicks and Bans client's ip range.  The security levels can be l, m, or h. (light, medium, heavy)  
+			<b>Warning:</b> Banning IP ranges can cause unfortunate events in masking out an entire ISP.  Only use as a last resort.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mvstr<br /> 
+		    <span class="fontstylegray">&lt;vstr/name&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amvstr<br /> 
+		    <span class="fontstylegray">&lt;vstr/name&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">16384</td>
+			<td valign="top" class='overviewright'>Executes and selects the map desired available in the rotation.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mnextmap</td>
+			<td valign="top" class='overviewleftdark'>amnextmap</td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">32768</td>
+			<td valign="top" class='overviewright'>Executes and selects the next map available in the rotation.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mforceteam<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;team&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amforceteam<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;<br />&lt;team&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">65536</td>
+			<td valign="top" class='overviewright'>Transfers a client to a specified team in CTF gameplay. (Red, Blue, Spectator)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>status</td>
+			<td valign="top" class='overviewleftdark'>amstatus<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">statusgun</td>
+			<td valign="middle" class='overviewleft' align="center" >131072</td>
+			<td valign="top" class='overviewright'>Altered version of status. This displays the clietid, ip address, and name.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mgametype<br /> 
+		    <span class="fontstylegray">&lt;gametype&gt;<br />&lt;map&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amgametype<br /> 
+		    <span class="fontstylegray">&lt;gametype&gt;<br />&lt;map&gt;</span></td>
+			<td valign="top" class='overviewleftdark'></td>
+			<td valign="middle" class='overviewleft' align="center">262144</td>
+			<td valign="top" class='overviewright'>Allows the admin to change Map and Gameplay.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mnpcaccess<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amnpcaccess<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">npcgun</td>
+			<td valign="middle" class='overviewleft' align="center">524288</td>
+			<td valign="top" class='overviewright'>Grants / Denies the client ability to spawn NPC's.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mslap<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amslap<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">slapgun</td>
+			<td valign="middle" class='overviewleft' align="center">1048576</td>
+			<td valign="top" class='overviewright'>Slaps some sense into the client.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mempower<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amempower<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">empowergun</td>
+			<td valign="middle" class='overviewleft' align="center">2097152</td>
+			<td valign="top" class='overviewright'>Empowers a client with all Force powers and stronger skills.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>munempower<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amunempower<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">unempowergun</td>
+			<td valign="middle" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>The client returns to normal player abilities.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mterminator<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amterminator<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">terminatorgun</td>
+			<td valign="middle" class='overviewleft' align="center">4194304</td>
+			<td valign="top" class='overviewright'>Enables the client to have all weapons and full power.  A lethal weapon.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>munterminator<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amunterminator<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">unterminatorgun</td>
+			<td valign="middle" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>The client returns to normal player abilities.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mprotect<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amprotect<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">protectgun</td>
+			<td valign="middle" class='overviewleft' align="center">8388608</td>
+			<td valign="top" class='overviewright'>Protects a client from attacks.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>munprotect<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amunprotect<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">unprotectgun</td>
+			<td valign="middle" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>The client is no longer protected.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mtimescale<br /> 
+		    <span class="fontstylegray">&lt;scale&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amtimescale<br /> 
+		    <span class="fontstylegray">&lt;scale&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center"></td>
+			<td valign="middle" class='overviewleft' align="center" >16777216</td>
+			<td valign="top" class='overviewright'>Alters the speed of the game.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mwarn<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amwarn<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">warngun</td>
+			<td valign="middle" class='overviewleft' align="center">33554432</td>
+			<td valign="top" class='overviewright'>Warns a client.  If the client meets or exceeds the g_mMaxWarnings, 
+			they are kicked or kickbanned.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>mforgive<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="top" class='overviewleftdark'>amforgive<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftdark' align="center">forgivegun</td>
+			<td valign="middle" class='overviewleft'></td>
+			<td valign="top" class='overviewright'>Forgives a client that has been previously warned.</td>
+		</tr>
+		</table>
+		<br />
+		<ul>
+		<li>Included is a jae_admin.cfg script which allows the admin user to access the admin gun commands with ease.  Place this file in your base folder and type \exec jae_admin.cfg in game console when in game.</li>
+		</ul>
+		<br />
+		<br />
+		<p class="section" id='clientcommands'>Client Commands</p>
+		<p>--Client Commands can be used by all clients.  Admin Commands only for logged in admins and knights and are controlled via g_mAdminCommands and g_mKnightCommands cVars.</p>
+		<table cellpadding="10">
+		<tr>
+			<th class='header'>
+				Client command
+			</th>
+			<th class='header'>
+				Cvar
+			</th>
+			<th class='header'>
+				Description
+			</th>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>amlogin<br /> 
+		    <span class="fontstylegray">&lt;password&gt;</span></td>
+			<td valign="middle" class='overviewleftlight' align="center">g_mAllowAdminLogin</td>
+			<td valign="top" class='overviewright'>Allows Secondary Admins to use the Admin Commands</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>amlogout</td>
+			<td valign="middle" class='overviewleftlight' align="center">g_mAllowAdminLogin</td>
+			<td valign="top" class='overviewright'>Allows Admins and Knights to Logout.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>amwhois</td>
+			<td valign="middle" class='overviewleftlight' align="center">g_mWhois</td>
+			<td valign="top" class='overviewright'>Allows user to see who is logged in as an admin.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>amsay<br /> 
+		    <span class="fontstylegray">&lt;message&gt;</span></td>
+			<td valign="middle" class='overviewleftlight' align="center"></td>
+			<td valign="top" class='overviewright'>Sends a message to all logged in Admins and Knights.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>ignore<br /> 
+		    <span class="fontstylegray">&lt;playerid&gt;</span></td>
+			<td valign="middle" class='overviewleftlight' align="center"></td>
+			<td valign="top" class='overviewright'>Ignores chat from a certain player. (repeat to disable)</td>
+		</tr>
+		</table>
+		<br />
+		<br />
+		<br />
+		<br />
+		<p class="section" id='emotecommands'>Emote Commands</p>
+		<p>--Emote Commands can be used by all clients.  These commands allow the user to execute 
+		certain animations in game which is ideal for roleplay type servers.</p>
+		<table cellpadding="10">
+		<tr>
+			<th class='header'>Emote command</th>
+			<th class='header'>CVar Bitwise Value</th>
+			<th class='header'>Description</th>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emsit</td>
+			<td valign="middle" class='overviewleft' align="center">1</td>
+			<td valign="top" class='overviewright'>Performs a sitting animation.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emsit2</td>
+			<td valign="middle" class='overviewleft' align="center">2</td>
+			<td valign="top" class='overviewright'>Performs a laidback sitting animation.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emsit3</td>
+			<td valign="middle" class='overviewleft' align="center">4</td>
+			<td valign="top" class='overviewright'>Performs yet another sitting animation.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emwait</td>
+			<td valign="middle" class='overviewleft' align="center">8</td>
+			<td valign="top" class='overviewright'>Clamps your hands behind your back. Player is able to move.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emsurrender</td>
+			<td valign="middle" class='overviewleft' align="center">16</td>
+			<td valign="top" class='overviewright'>Puts your hands up in the air. Player is able to move.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emsorrow</td>
+			<td valign="middle" class='overviewleft' align="center">32</td>
+			<td valign="top" class='overviewright'>Places the character at a sorrowful animation, kneeling on the ground.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emhonor</td>
+			<td valign="middle" class='overviewleft' align="center">64</td>
+			<td valign="top" class='overviewright'>Places the character at a honorable animation, kneeling before their master.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emnod</td>
+			<td valign="middle" class='overviewleft' align="center">128</td>
+			<td valign="top" class='overviewright'>The client nods their head.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emshake</td>
+			<td valign="middle" class='overviewleft' align="center">256</td>
+			<td valign="top" class='overviewright'>The client shakes their head.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>empraise</td>
+			<td valign="middle" class='overviewleft' align="center">512</td>
+			<td valign="top" class='overviewright'>The client raises the roof.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emattenhut</td>
+			<td valign="middle" class='overviewleft' align="center">1024</td>
+			<td valign="top" class='overviewright'>The client stands at attention.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emcrossarms</td>
+			<td valign="middle" class='overviewleft' align="center">2048</td>
+			<td valign="top" class='overviewright'>The client leans against an entity with their arms crossed.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emalora</td>
+			<td valign="middle" class='overviewleft' align="center">4096</td>
+			<td valign="top" class='overviewright'>The client executes the Alora taunt from SP mode.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emthrow</td>
+			<td valign="middle" class='overviewleft' align="center">8192</td>
+			<td valign="top" class='overviewright'>The client randomly throws the saber in two different directions.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emtavion</td>
+			<td valign="middle" class='overviewleft' align="center">16384</td>
+			<td valign="top" class='overviewright'>The client executes the Tavion taunt from SP mode.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>empoint</td>
+			<td valign="middle" class='overviewleft' align="center">32768</td>
+			<td valign="top" class='overviewright'>The client points in a general direction.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emcomeon</td>
+			<td valign="middle" class='overviewleft' align="center">65536</td>
+			<td valign="top" class='overviewright'>The client motions the other client to come here.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emsit4</td>
+			<td valign="middle" class='overviewleft' align="center">131072</td>
+			<td valign="top" class='overviewright'>Performs a proper sitting animation.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emsit5</td>
+			<td valign="middle" class='overviewleft' align="center">262144</td>
+			<td valign="top" class='overviewright'>Sitting in crouched position, slouched forward.</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>emsit6</td>
+			<td valign="middle" class='overviewleft' align="center">524288</td>
+			<td valign="top" class='overviewright'>Sitting upright, leaning back.</td>
+		</tr>
+		</table>
+		<br />
+		<br />
+		<br />
+		<br />
+		<p class="section" id='damagecvars'>Saber Damage CVars</p>
+		<p>--Commands that can be used to control the damage certain moves do. 
+		Note that certain moves have a min and a max damage. The min damage is in the beginning and ending of the move the max damage is usually the middle of the move. 
+		The values are interpolated over the whole range of the move. As a rule of thumb the number of HP that will go off is about equal to half of the damage.  
+		Increase the values for higher damage and decrease the values for lower damage.  <b>Default values are the normal Jedi Academy (basejk) values.</b></p>
+		<table cellpadding="10">
+		<tr>
+			<th class='header'>
+				CVar	
+			</th>
+			<th class='header'>
+				Description
+			</th>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGIdle</td>
+			<td valign="top" class='overviewright'>Damage for saber idle. (Default is <span class="fontstyleblack">1</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGThrow</td>
+			<td valign="top" class='overviewright'>Damage for saber throw. (Default is <span class="fontstyleblack">30</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGKick</td>
+			<td valign="top" class='overviewright'>Damage for a kick when saber in hand. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGTwirl</td>
+			<td valign="top" class='overviewright'>Damage for dual/staff saber twirl. (Default is <span class="fontstyleblack">10</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGDualKata</td>
+			<td valign="top" class='overviewright'>Damage for Dual Saber Kata. (Default is <span class="fontstyleblack">90</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGStaffKataMin</td>
+			<td valign="top" class='overviewright'>Min Damage for Staff Saber Kata. (Default is <span class="fontstyleblack">60</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGStaffKataMax</td>
+			<td valign="top" class='overviewright'>Max Damage for Staff Saber Kata. (Default is <span class="fontstyleblack">70</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGSpecialMin</td>
+			<td valign="top" class='overviewright'>Min Damage for Dual/Staff Saber Specials. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGSpecialMax</td>
+			<td valign="top" class='overviewright'>Max Damage for Dual/Staff Saber Specials. (Default is <span class="fontstyleblack">90</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGMultiMin</td>
+			<td valign="top" class='overviewright'>Min Damage for Dual/Staff Saber Normal Attacks. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGMultiMax</td>
+			<td valign="top" class='overviewright'>Max Damage for Dual/Staff Saber Normal Attacks. (Default is <span class="fontstyleblack">70</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGRedNormal</td>
+			<td valign="top" class='overviewright'>Normal damage for normal red slashes. (Default is <span class="fontstyleblack">100</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGRedNormalMin</td>
+			<td valign="top" class='overviewright'>Min damage for normal red slashes. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGRedNormalMax</td>
+			<td valign="top" class='overviewright'>Max damage for normal red slashes. (Default is <span class="fontstyleblack">120</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGRedDFAMin</td>
+			<td valign="top" class='overviewright'>Min damage for the red Death From Above move. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGRedDFAMax</td>
+			<td valign="top" class='overviewright'>Max damage for the red Death From Above move. (Default is <span class="fontstyleblack">180</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGRedBackMin</td>
+			<td valign="top" class='overviewright'>Min damage for the red backslash move. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGRedBackMax</td>
+			<td valign="top" class='overviewright'>Max damage for the red backslash move. (Default is <span class="fontstyleblack">30</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGYellowNormal</td>
+			<td valign="top" class='overviewright'>Normal damage for the yellow slash. (Default is <span class="fontstyleblack">60</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGYellowOverheadMin</td>
+			<td valign="top" class='overviewright'>Min damage of the yellow downward slash. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGYellowOverheadMax</td>
+			<td valign="top" class='overviewright'>Max damage of the yellow downward slash. (Default is <span class="fontstyleblack">80</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGYellowBackMin</td>
+			<td valign="top" class='overviewright'>Min damage for the yellow backslash move. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGYellowBackMax</td>
+			<td valign="top" class='overviewright'>Max damage for the yellow backslash move. (Default is <span class="fontstyleblack">25</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGBlueNormal</td>
+			<td valign="top" class='overviewright'>Normal damage for the blue slash. (Default is <span class="fontstyleblack">35</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGBlueLungeMin</td>
+			<td valign="top" class='overviewright'>Min damage for the blue lunge move. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGBlueLungeMax</td>
+			<td valign="top" class='overviewright'>Max damage for the blue lunge move. (Default is <span class="fontstyleblack">30</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGBlueBackMin</td>
+			<td valign="top" class='overviewright'>Min damage for the blue backstab move. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGBlueBackMax</td>
+			<td valign="top" class='overviewright'>Max damage for the blue backstab move. (Default is <span class="fontstyleblack">30</span>)</td>
+		</tr>
+	</table>
+	<br />
+		<br />
+		<br />
+		<br />
+		<p class="section" id='amplifycvars'>Saber Damage Amplifier CVars</p>
+		<p>--Amplifies the damage level when a certain move is unblockable. It is highly recommended not to adjust these values.  They are soley for the purpose of tweaking your own kind of saber behavior for a more realistic feel.  <b>Default values are the normal Jedi Academy (basejk) values.</b></p>
+		<table cellpadding="10">
+		<tr>
+			<th class='header'>
+				CVar	
+			</th>
+			<th class='header'>
+				Description
+			</th>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGTwirlAmplifier</td>
+			<td valign="top" class='overviewright'>Damage for dual/staff saber twirl. (Default is <span class="fontstyleblack">10</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGLungeAmplifier</td>
+			<td valign="top" class='overviewright'>Damage for the blue lunge move. (Default is <span class="fontstyleblack">2</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGDFAAmplifier</td>
+			<td valign="top" class='overviewright'>Damage for the red Death From Above move. (Default is <span class="fontstyleblack">5</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGOverheadAmplifier</td>
+			<td valign="top" class='overviewright'>Damage for the yellow downward slash move. (Default is <span class="fontstyleblack">5</span>)</td>
+		</tr>
+		<tr>
+			<td valign="top" class='overviewleftdark'>g_mSaberDMGAutoAmplifier</td>
+			<td valign="top" class='overviewright'>Damage for any unblockable move other than the above specials. (Default is <span class="fontstyleblack">5</span>) (Max is <span class="fontstyleblack">g_mSaberDMGAutoAmplifier</span> + <span class="fontstyleblack">5</span>)</td>
+		</tr>
+		</table>
+        <br />
+        <br />
+        <br />
+        <br />
+		<p class="section" id='messagecvars'>Message CVars</p>
+		<p>--These CVars are custom messages that can be set for certain commands. This is what players see when a command is executed.
+		Note that some commands allow the use of %s to be replaced with the affected player's name. Also note that
+		in most CVars a \n can be used to insert an enter.</p>
+		<table>
+			<tr>
+				<th class='header'>Everyone<br />
+			  [Get's shown when using a command with the all keyword]</th>
+				<th class='header'>Broadcast<br />
+			  [Get's broadcast to everyone but the target of a command]</th>
+				<th class='header'>Target<br />
+			  [Get's broadcast to the target of a command]</th>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageUnSilenceEveryone</td>
+				<td class='overviewleftdark'>g_mMessageUnSilenceBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageUnSilenceTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageSilenceEveryone</td>
+				<td class='overviewleftdark'>g_mMessageSilenceBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageSilenceTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageSlapEveryone</td>
+				<td class='overviewleftdark'>g_mMessageSlapBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageSlapTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageEmpowerEveryone</td>
+				<td class='overviewleftdark'>g_mMessageEmpowerBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageEmpowerTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageUnEmpowerEveryone</td>
+				<td class='overviewleftdark'>g_mMessageUnEmpowerBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageUnEmpowerTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageTerminatorEveryone</td>
+				<td class='overviewleftdark'>g_mMessageTerminatorBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageTerminatorTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageUnTerminatorEveryone</td>
+				<td class='overviewleftdark'>g_mMessageUnTerminatorBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageUnTerminatorTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageWakeEveryone</td>
+				<td class='overviewleftdark'>g_mMessageWakeBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageWakeTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageSleepEveryone</td>
+				<td class='overviewleftdark'>g_mMessageSleepBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageSleepTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageTeleEveryone</td>
+				<td class='overviewleftdark'>g_mMessageTeleBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageTeleTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageForceTeamEveryone</td>
+				<td class='overviewleftdark'>g_mMessageForceTeamBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageForceTeamTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageVoteAllowEveryone</td>
+				<td class='overviewleftdark'>g_mMessageVoteAllowBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageVoteAllowTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageVoteDenyEveryone</td>
+				<td class='overviewleftdark'>g_mMessageVoteDenyBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageVoteDenyTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageProtectEveryone</td>
+				<td class='overviewleftdark'>g_mMessageProtectBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageProtectTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageUnProtectEveryone</td>
+				<td class='overviewleftdark'>g_mMessageUnProtectBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageUnProtectTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageWarningEveryone</td>
+				<td class='overviewleftdark'>g_mMessageWarningBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageWarningTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageWarningKickedEveryone</td>
+				<td class='overviewleftdark'>g_mMessageWarningKickedBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageWarningKickedTarget</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMessageForgiveEveryone</td>
+				<td class='overviewleftdark'>g_mMessageForgiveBroadcast</td>
+				<td class='overviewleftdark'>g_mMessageForgiveTarget</td>
+			</tr>
+		</table>
+		<br />
+		<br />
+		<p class="section" id='othercvars'>Other CVars</p>
+		<p>--These are some miscellaneous CVars that are primarily used for control switches that enable and disable certain features in Jedi Academy Empire. You will find these very useful.</p> 
+		<table>
+			<tr>
+				<th class='header'>CVar</th>
+				<th class='header'>Description</th>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mAdminPassword</td>
+				<td class='overviewright'>The password for the Jedi Academy Admins.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mKnightPassword</td>
+				<td class='overviewright'>The password for the Jedi Academy Knights.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mRankName</td>
+				<td class='overviewright'>The rank name for the Jedi Academy Admins.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mRankName2</td>
+				<td class='overviewright'>The rank name for the Jedi Academy Knights.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mRankDisplay</td>
+				<td class='overviewright'>Determines if the rank name will be displayed for authed admins.  (Default is <span class="fontstyleblack">1</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mAdminCommands</td>
+				<td class='overviewright'>This value determines which commands are available
+				  to the &quot;Admin&quot; level admin. Its value is 
+				the sum of all the desired command's bitwise value.  Default is <span class="fontstyleblack">67108863</span> ( All
+				enabled )</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mKnightCommands</td>
+				<td class='overviewright'>This value determines which commands are available to the &quot;Knight&quot; level admin. Its value is 
+				the sum of all the desired command's bitwise value.  Default is <span class="fontstyleblack">8523171</span> ( JA
+				Empire default )</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mEmotes</td>
+				<td class='overviewright'>This value determines which emotions are available
+				  to the client. Its value is 
+				the sum of all the desired command's bitwise value.  Default is <span class="fontstyleblack">1048575</span> ( All
+				enabled )</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mAllowEmotes</td>
+				<td class='overviewright'>Allows user to use emotes in certain situations.<br /><br />0 = Off / basejk - Emotes only allowed in Duel and Powerduel gamemodes.<br />
+				1 = Taunts in FFA only, not allowed in Private Duels.<br />
+				2 = Taunts in Private Duels only.<br />
+				3 = Taunts in FFA and Private Duels only.<br />
+				4 = Taunts not allowed in Private duels, but everywhere else.<br />(Default is <span class="fontstyleblack">4</span>)</td>
+			</tr>
+			<tr>
+			<td class='overviewleftdark'>g_mAdminLoginControl</td>
+				<td class='overviewright'>Allows user to supply an admin password at connection time and be able to login automatically.<br /><br />0 = Off - You won't be able to login as an admin upon connection time.<br />
+				1 = Admin only server.<br />
+				2 = Knight only server.<br />
+				3 = Admin and Knight only server.<br />
+				4 = Admin and those who supply the g_password only server.<br />
+				5 = Knight and those who supply the g_password only server.<br />
+				6 = Admin, Knight, and those who supply the g_password only server.<br />(Default is <span class="fontstyleblack">6</span>)
+				<br /><br /><strong>Note:</strong><br />
+				1. For settings 4, 5, and 6 - If the g_password is not needed on the server, then the user can login as an admin or knight this way as long as the setting is not 0.
+				<br />
+				2. There is no restriction on the login once in the server and using the amlogin command.  To restrict that, you need to change g_mAllowAdminLogin to 0.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mAllowTeamSuicide</td>
+				<td class='overviewright'>If this is set to 1, Clients can use the \kill command during team gameplay. (Default is <span class="fontstyleblack">1</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mAllowTeamDuel</td>
+				<td class='overviewright'>If this is set to 1, Clients can enguage in private duels during team gameplay. (Default is <span class="fontstyleblack">0</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mDebugEmpower</td>
+				<td class='overviewright'>If this is set to 1 <strong>and</strong> if &quot;No Force&quot; rule for servers is active, than it will disable the use of force for empowered clients.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mDebugTerminator</td>
+				<td class='overviewright'>If this is set to 1 <strong>and</strong> if &quot;Saber Only&quot; rule for servers is active, than it will disable the use of weapons for terminator clients.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mGiveAdmin</td>
+				<td class='overviewright'>If this is set to 1, Rcon can give clients a level of admin access.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mDuelStats</td>
+				<td class='overviewright'>If this is set to 1, Duelers are able to see stats after private duels. If this is set to 2, Everyone can see the Duel Stats. If this is set to 0, it reports basejk style.  This feature is also available in the Duel gametype.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mDuelTimer</td>
+				<td class='overviewright'>If this is set to 1, The player cannot duel until a certain time period has been met.  (Default is <span class="fontstyleblack">0</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mDuelTimerWait</td>
+				<td class='overviewright'>The amount of time a client has to wait before initializing another private duel in milliseconds.  (Default is <span class="fontstyleblack">10000</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mNerfBacta</td>
+				<td class='overviewright'>If this is set to 1, you can alter the health regeneration for Large and Normal size Bacta canisters.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mBigBactaHP</td>
+				<td class='overviewright'>This CVar alters the health regeneration for Large size Bacta canisters. (Default is <span class="fontstyleblack">50</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mBactaHP</td>
+				<td class='overviewright'>This CVar alters the health regeneration for Normal size Bacta canisters. (Default is <span class="fontstyleblack">25</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mAllowBlack</td>
+				<td class='overviewright'>If this is set to 1, Clients can use the color black for names.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mEnforceDuel</td>
+				<td class='overviewright'>If this is set to 0, Clients can use the multiplayer duel option.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mAllowDuelRegen</td>
+				<td class='overviewright'>If this is set to 1, Server can change the Force pool regeneration time for Private Duels Only.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mDuelForce</td>
+				<td class='overviewright'>The amount of Force pool the winner receives after a Private Duel.  (Default is <span class="fontstyleblack">100</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_forceRegenTimeDuel</td>
+				<td class='overviewright'>The Force pool regeneration time for Private Duels Only. (Default is <span class="fontstyleblack">200</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mAllowBotLimit</td>
+				<td class='overviewright'>If this is set to 1, Server Admin can set the g_mMaxBots and g_mMinHumans on the server.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMaxBots</td>
+				<td class='overviewright'>Set to any number of max bots you want on your server.  When g_mMinHumans is reached or excelled, they will be kicked automatically. (Default is <span class="fontstyleblack">1</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMinHumans</td>
+				<td class='overviewright'>The number of Humans on the server before a bot is kicked. (Default is <span class="fontstyleblack">2</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mJvsT</td>
+				<td class='overviewright'>If this is set to 1, Clients can play Empowered vs. Terminator game mode.  Must set jediVmerc to &quot;1&quot; as well.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mSTFU</td>
+				<td class='overviewright'>If this is set to 1, clients are silenced in Duel and Powerduel gamemodes.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mScreenSpam</td>
+				<td class='overviewright'>Determines whether clients will see admin command messages.<br /><br />0 = Off<br />
+				1 = Clients will see admin command message printing in center screen.<br />
+				2 = Clients will see the admin command message printing in the console.<br />(Default is <span class="fontstyleblack">1</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mWhois</td>
+				<td class='overviewright'>Allows user to see who is logged in as an admin.<br /><br />0 = Off<br />
+				1 = Only Admins can see who is logged in.<br />
+				2 = Just shows the user who is logged in.<br />
+				3 = Shows all users who is logged in.<br />(Default is <span class="fontstyleblack">1</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mPSayMode</td>
+				<td class='overviewright'>Determines the location of the private chat message.<br /><br />
+				1 = Clients will see the private message printing in center screen.<br />
+				2 = Clients will see private message printing in the console.<br />
+				3 = Clients will see the private message printing in center screen and in the console.<br />
+				(Default is <span class="fontstyleblack">3</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mSayChatColor<br />g_mTeamChatColor<br />g_mTellChatColor<br />g_mASayColor</td>
+				<td class='overviewright'>Allows user to change chat color for messagemode, messagemode2, messagemode3, and admin chat.<br /><br />0 = Off / White<br />
+				1 = Red.<br />
+				2 = Green.<br />
+				3 = Yellow.<br />
+				4 = Blue.<br />
+				5 = Cyan.<br />
+				6 = Magenta.<br />
+				7 = White.<br />(Default is <span class="fontstyleblack">2, 5, 6, 5</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mAdminGun</td>
+				<td class='overviewright'>If this is set to 1, All Admins can use the crosshair to aim and execute admin commands on the target.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mNoAdminFollow</td>
+				<td class='overviewright'>If this is set to 1, clients are unable to follow admins in spectator mode.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mWelcomeMessage</td>
+				<td class='overviewright'>Shows custom welcome message in the console.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mHelpInfo</td>
+				<td class='overviewright'>This info aids clients on the server.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mLoggedInAdmin</td>
+				<td class='overviewright'>This displays custom message to client when 
+              	they log in as an admin.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mNotLoggedInAdmin</td>
+				<td class='overviewright'>This displays custom message to client when they fail to log in as an admin and attempt to use a command.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mLoggedInKnight</td>
+				<td class='overviewright'>This displays custom message to client when 
+              	they log in as an knight.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMOTDContents</td>
+				<td class='overviewright'>The contents of the message of the day.</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMOTDShowTime</td>
+				<td class='overviewright'>The time to show the message of the day in milliseconds. (Default is <span class="fontstyleblack">3000</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mPlayerDuelShield</td>
+				<td class='overviewright'>If this CVar is -1 then nothing changes. If it is between 0 and 200, on a duel start the players stats will be saved and the HP will become 100 and the shield will become g_mPlayerDuelShield units. After the duel the stats of the remaining player is restored. This should make duels a bit more fair. (Default is <span class="fontstyleblack">50</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mMaxWarnings</td>
+				<td class='overviewright'>The maximum amount of warnings a client will receive before being kicked or kickbanned.  (Default is <span class="fontstyleblack">3</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mWarningPunishment</td>
+				<td class='overviewright'>If this is set to 1, the client will be kicked.  If this is set to 2, the client will be kickbanned.  If this is set to 0, the clients warnings will be logged only. (Default is <span class="fontstyleblack">1</span>)</td>
+			</tr>
+			<tr>
+				<td class='overviewleftdark'>g_mBanFile</td>
+				<td class='overviewright'>The name of the file where the IP addresses are stored when a client has been kickbanned. (Default is <span class="fontstyleblack">banip.dat</span>)</td>
+			</tr>
+		</table>
+		<br />
+		<p>Please see the enclosed <i>jae_server.cfg</i> file for an example.</p>
+		<br />
+		<br />
+		<p class="section" id='knownissues'>Known Issues</p>
+        <ul>
+          <li>When changing some message CVars you can use '%s' to add the player 
+            name to the message. When changing the message in the console however, 
+            the '%' becomes a '.' so the name won't be displayed. A workaround 
+            for this is to only change the values in the config file and rerun it.</li>
+          <li>The &quot;am&quot; commands need a '/' or '\' (without quotes) in front of 
+            them when executing. Else the command will be shown as a talk command 
+            to all players.</li>
+        </ul>
+		<br />
+		<br />
+		<br />
+		<br />
+		<p class="section" id='acknowledgments'>Acknowledgments</p>
+		<ul>
+		<li>Special Thanks to my friends Darth Mobility and Virtue for being there for me 
+		and inspiring me to mod this game again.</li>
+		<li>Thanks to the JA community for their support throughout the years.</li>
+		<li>Thanks to Bad_Hex for helping me with some JA coding issues.</li>
+        <li>Thanks to Orion for implementing some functionality from the JAR days.</li>
+		<li>Thanks to the OJP team and their open arms approach at making this game and community a better society and supplying fixes for the game.</li>
+		<li>Extra Thanks to Setementor, R2D2, and the rest of the QA team for testing the application.</li>
+		</ul>
+		<br />
+		<br />
+		<br />
+		<br />
+		<p class="section" id='disclaimer'>Disclaimer</p>
+		Use this mod on your own risk. I take no responsibility what so ever for 
+        anything that might happen when using it. The mod has been primarily tested 
+        in all modes and gameplays on Windows and Linux servers. You may not decompile or modify this mod in any shape or form.</td>
+</tr>
+</table>
+</body>
+</html>
